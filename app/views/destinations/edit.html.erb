@@ -1,0 +1,29 @@
+<div class="header">
+  <div class="container">
+    <img src="http://s3.amazonaws.com/codecademy-content/courses/learn-rails/img/logo-1tm.svg" width="80">
+    <h1>BokenjiKan</h1>
+  </div>
+</div>
+
+<div class="destination">
+  <div class="container">
+    <%= image_tag @destination.image %>
+    
+    <%= form_for(@destination) do |f| %>  
+  		<div class="field"> 
+        <%= f.text_field :name %><br>
+        <%= f.text_field :image %><br>
+        <%= f.text_field :description %><br>
+        <%= f.text_field :tag %>
+        
+  		</div> 
+  		<div class="actions"> 
+        <%= f.submit "Update" %> 
+  		</div> 
+		<% end %>
+
+
+
+
+  </div>
+</div> 
